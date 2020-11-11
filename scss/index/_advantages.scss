@@ -1,0 +1,104 @@
+.advatages {
+    &__title {
+        font-family: "Roboto Bold";
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        margin-left: 24px;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__subwrap {
+
+        width: 525px;
+        margin-top: 39px;
+        // margin-left: 472px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 107px;
+    }
+
+    &__item {
+        width: 225px;
+        height: 44px;
+        display: flex;
+    }
+    &__text {
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        margin-left: 20px;
+    }
+    &__image {
+        width: 42px;
+        height: 44px;
+        background-repeat: no-repeat;
+        &--1 {
+            background-image: url(../img/adv_img1.png);
+            margin-top: 3px;
+        }
+        &--2 {
+            background-image: url(../img/adv_img2.png);
+            margin-top: 5px;
+        }
+        &--3 {
+            background-image: url(../img/adv_img3.png);
+            margin-top: 8px;
+        }
+        &--4 {
+            background-image: url(../img/adv_img4.png);
+            margin-top: 5px;
+        }
+        &--5 {
+            background-image: url(../img/adv_img5.png);
+            margin-top: 12px;
+        }
+    }
+}
+
+@media all and (max-width: 600px){
+    .advatages {
+        &__title {
+            width: 173px;
+        }
+        &__wrap {
+            justify-content: flex-start;
+            padding-left: 24px;
+        }
+        &__subwrap {
+            width: 225px;
+            margin-top: 33px;
+            // margin-left: 472px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 51px;
+        }
+        &__item {
+            min-width: 250px;
+        }
+        &__image {
+            &--1 {
+                margin-right: 4px;
+            }
+            &--2 {
+            }
+            &--3 {
+                margin-right: 17px;
+            }
+            &--4 {
+                margin-right: 14px;
+            }
+            &--5 {
+                margin-right: 10px;
+            }
+        }
+    }
+}
