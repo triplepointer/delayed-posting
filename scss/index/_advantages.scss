@@ -1,162 +1,103 @@
-.advantages {
-    & .container {
-        position: relative;
+.advatages {
+    &__title {
+        font-family: "Roboto Bold";
+        font-size: 32px;
+        line-height: 37px;
+        color: #000000;
+        margin-left: 24px;
     }
-    &__first-wave {
-        height: 569px;
-        padding-top: 64px;
-        background-image: url(../img/first-wave.png);
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        width: 100%;
     }
-    &__second-wave {
-        height: 515px;
-        padding-top: 55px;
-        background-image: url(../img/second-wave.png);
-    }
-    &__third-wave {
-        height: 460px;
-        padding-top: 196px;
-        background-image: url(../img/third-wave.png);
-    }
-    &__items {
-        margin-left: 25px;
+
+    &__subwrap {
+
+        width: 525px;
+        margin-top: 39px;
+        // margin-left: 472px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 107px;
     }
-    @media all and (max-width: 1326px) {
-        &__items {
-            justify-content: center;
-            margin-left: 0;
-        }
-    }
-    @media all and (max-width: 858px) {
-        &__items {
-            flex-direction: column;
-            align-items: center;
-            margin-left: 0;
-        }
-    }
-    &__high-performance {
+
+    &__item {
+        width: 225px;
+        height: 44px;
         display: flex;
-        &-image {
-            width: 89px;
-            height: 115px;
-            background-image: url(../img/high-performance.png);
+    }
+    &__text {
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        margin-left: 20px;
+    }
+    &__image {
+        width: 42px;
+        height: 44px;
+        background-repeat: no-repeat;
+        &--1 {
+            background-image: url(../img/adv_img1.png);
+            margin-top: 3px;
         }
-        &-right-side {
-            width: 242px;
-            margin-left: 40px;
+        &--2 {
+            background-image: url(../img/adv_img2.png);
+            margin-top: 5px;
         }
-        &-title {
-            font-family: "Roboto Bold";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
+        &--3 {
+            background-image: url(../img/adv_img3.png);
+            margin-top: 8px;
         }
-        &-description {
-            margin-top: 10px;
-            font-family: "Roboto";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
+        &--4 {
+            background-image: url(../img/adv_img4.png);
+            margin-top: 5px;
+        }
+        &--5 {
+            background-image: url(../img/adv_img5.png);
+            margin-top: 12px;
         }
     }
-    &__reliability {
-        display: flex;
-        margin-left: 62px;
-        &-image {
-            width: 98px;
-            height: 104px;
-            background-image: url(../img/reliability.png);
+}
+
+@media all and (max-width: 600px){
+    .advatages {
+        &__title {
+            width: 173px;
         }
-        &-right-side {
-            width: 288px;
-            margin-left: 40px;
+        &__wrap {
+            justify-content: flex-start;
+            padding-left: 24px;
         }
-        &-title {
-            font-family: "Roboto Bold";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
+        &__subwrap {
+            width: 225px;
+            margin-top: 33px;
+            // margin-left: 472px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 51px;
         }
-        &-description {
-            margin-top: 10px;
-            font-family: "Roboto";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
+        &__item {
+            min-width: 250px;
         }
-    }
-    @media all and (max-width: 858px) {
-        &__reliability {
-            margin-left: 37px;
-            margin-top: 30px;
-        }
-    }
-    &__security {
-        display: flex;
-        margin-left: 77px;
-        &-image {
-            width: 84px;
-            height: 98px;
-            background-image: url(../img/security.png);
-        }
-        &-right-side {
-            width: 242px;
-            margin-left: 40px;
-        }
-        &-title {
-            font-family: "Roboto Bold";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
-        }
-        &-description {
-            margin-top: 10px;
-            font-family: "Roboto";
-            font-size: 16px;
-            line-height: 19px;
-            color: #E4E8F3;
-        }
-    }
-    @media all and (max-width: 858px) {
-        &__security {
-            margin-left: 3px;
-            margin-top: 30px;
-        }
-    }
-    @media all and (max-width: 500px) {
-        &__high-performance {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        &__reliability {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        &__security {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    @media all and (max-width: 435px) {
-        &__high-performance {
-            &-right-side {
-                width: 100%;
+        &__image {
+            &--1 {
+                margin-right: 4px;
             }
-        }
-        &__reliability {
-            margin-left: 0;
-            &-right-side {
-                width: 100%;
-                
+            &--2 {
             }
-        }
-        &__security {
-            &-right-side {
-                width: 100%;
+            &--3 {
+                margin-right: 17px;
+            }
+            &--4 {
+                margin-right: 14px;
+            }
+            &--5 {
+                margin-right: 10px;
             }
         }
     }

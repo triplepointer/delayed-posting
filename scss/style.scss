@@ -1,6 +1,6 @@
 // Базовые настройки сетки
 body {
-    background: #262D46;
+    background: #E5E5E5;
 }
 textarea {
     resize: none;
@@ -15,15 +15,17 @@ textarea {
 @import "index/navbar";
 // Hero
 @import "index/hero";
+// Functions
+@import "index/functions";
+// How it works
+@import "index/how-it-works";
 // Advantages
 @import "index/advantages";
-// Our-software
-@import "index/our-software";
-// Process-of-work
-@import "index/process-of-work";
-// Presale
-@import "index/presale";
-// Request
-@import "index/request";
+// For whom
+@import "index/for-whom";
+// Tariffs
+@import "index/tariffs";
+// Contacts
+@import "index/contacts";
 // Footer
 @import "index/footer";
