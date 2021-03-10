@@ -176,6 +176,8 @@
         &__last-col-alter {
             flex-direction: column;
             align-items: center;
+            width: 100%;
+            max-width: 327px;
         }
         &__button {
             margin-bottom: 20px;

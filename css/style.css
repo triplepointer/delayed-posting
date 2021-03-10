@@ -23,7 +23,7 @@ a {
 }
 
 .btn-green {
-  height: 46px;
+  height: auto;
   color: #F7F9FA;
   background-color: #2FA84F;
   padding: 12px 24px;
@@ -33,6 +33,7 @@ a {
   line-height: 22px;
   font-family: "Roboto";
   border: none;
+  min-height: 46px;
 }
 
 .btn-green--small {
@@ -657,6 +658,9 @@ input[type="file"] {
 }
 
 @media all and (max-width: 375px) {
+  .hero {
+    padding-right: 20px;
+  }
   .hero__button {
     width: 100%;
   }
@@ -1142,6 +1146,7 @@ input[type="file"] {
 @media all and (max-width: 375px) {
   .for-whom__basic_settings {
     max-width: 300px;
+    width: 270px;
   }
 }
 
@@ -1455,6 +1460,7 @@ input[type="file"] {
 @media all and (max-width: 375px) {
   .contacts__name, .contacts__tel, .contacts__your-question, .contacts__button, .contacts__right-side, .contacts__left-side, .contacts__sub-wrap, .contacts__instruction {
     max-width: 300px;
+    width: 100%;
   }
 }
 
@@ -1688,6 +1694,8 @@ input[type="file"] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 100%;
+    max-width: 327px;
   }
   .footer__button {
     margin-bottom: 20px;

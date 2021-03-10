@@ -4,7 +4,7 @@ a {
 }
 
 .btn-green {
-    height: 46px;
+    height: auto;
     color: #F7F9FA;
     background-color: #2FA84F;
     padding: 12px 24px;
@@ -14,6 +14,7 @@ a {
     line-height: 22px;
     font-family: "Roboto";
     border: none;
+    min-height: 46px;
 }
 
 .btn-green--small {

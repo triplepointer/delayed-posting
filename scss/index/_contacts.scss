@@ -175,6 +175,7 @@
     .contacts {
         &__name, &__tel, &__your-question, &__button, &__right-side, &__left-side, &__sub-wrap, &__instruction {
             max-width: 300px;
+            width: 100%;
         }
     }
 }
