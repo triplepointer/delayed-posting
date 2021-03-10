@@ -91,6 +91,16 @@
     }
 }
 
+@media all and (max-width: 1185px){
+    .how-it-works {
+        &__left-side {
+            margin-left: 0px;
+            justify-content: center;
+        }
+    }
+
+}
+
 @media all and (max-width: 670px) {
     .how-it-works {
         &__left-side {
@@ -112,16 +122,6 @@
             width:412px;
         }
     }
-}
-
-@media all and (max-width: 1185px){
-    .how-it-works {
-        &__left-side {
-            margin-left: 0px;
-            justify-content: center;
-        }
-    }
-
 }
 
 @media all and (max-width: 600px){

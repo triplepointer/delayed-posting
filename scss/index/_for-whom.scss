@@ -62,3 +62,11 @@
         }
     }
 }
+
+@media all and (max-width: 375px) {
+    .for-whom {
+        &__basic_settings {
+            max-width: 300px;
+        }
+    }
+}

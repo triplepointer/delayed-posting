@@ -170,3 +170,18 @@
         }
     }
 } 
+
+@media all and (max-width: 375px){
+    .footer {
+        &__last-col-alter {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__button {
+            margin-bottom: 20px;
+        }
+        &__confidentiality {
+            margin-top: 60px;
+        }
+    }
+}
